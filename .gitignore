@@ -1,0 +1,89 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Project specific
+outputs/
+*.log
+.cache/
+# *.png
+# *.jpg
+# *.jpeg
+# test_screenshot.png
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pytest
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# Environment variables
+.env
+.env.local
+
+# Docker
+*.pid
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/
+
+# Development files
+benchmark_*.py
+simple_test.py
+test_local.py
+NOTE.md
+
+# Research and internal documents
+RESEARCH_*.md
+ANALYSIS_*.md
+INTERNAL_*.md
