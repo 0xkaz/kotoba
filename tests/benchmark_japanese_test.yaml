@@ -1,0 +1,5 @@
+name: Japanese Simple Test
+steps:
+- ページタイトルを確認する
+- スクリーンショットを撮る
+url: https://example.com

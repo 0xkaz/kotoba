@@ -1,0 +1,5 @@
+name: English Simple Test
+steps:
+- Check page title
+- Take a screenshot
+url: https://example.com

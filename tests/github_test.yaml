@@ -1,0 +1,18 @@
+name: "GitHub操作テスト"
+base_url: "https://github.com"
+test_cases:
+  - name: "GitHubリポジトリ検索"
+    steps:
+      - instruction: "検索ボックスに「playwright」と入力する"
+      - instruction: "検索を実行する"
+      - instruction: "検索結果ページで「microsoft/playwright」リポジトリを探す"
+      - instruction: "「microsoft/playwright」リンクをクリックする"
+      - instruction: "リポジトリページが開くことを確認する"
+
+  - name: "GitHubナビゲーション"
+    steps:
+      - instruction: "GitHubのトップページに戻る"
+      - instruction: "「Explore」や「探索」メニューをクリックする"
+      - instruction: "トレンドリポジトリページが表示されることを確認する"
+      - instruction: "人気のリポジトリの一つをクリックする"
+      - instruction: "リポジトリの詳細ページが開くことを確認する"

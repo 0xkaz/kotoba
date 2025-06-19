@@ -1,0 +1,28 @@
+name: "多言語アサーションテスト"
+base_url: "https://example.com"
+
+test_cases:
+  - name: "日本語アサーション（柔軟な引用符）"
+    description: "様々な引用符と丁寧語のテスト"
+    steps:
+      - instruction: "「Example Domain」が表示されていることを確認します"
+      - instruction: "\"Example Domain\"が表示されていることを確認してください"
+      - instruction: "'Example Domain'が表示されていることを確認"
+      - instruction: "URLに「example.com」が含まれることを確認します"
+      - instruction: "ページタイトルに\"Example\"が含まれることを確認してください"
+
+  - name: "英語アサーション"
+    description: "英語パターンのテスト"
+    steps:
+      - instruction: "verify that 'Example Domain' is visible"
+      - instruction: "check that \"Example Domain\" exists"
+      - instruction: "confirm the url contains 'example.com'"
+      - instruction: "assert that the title contains \"Example\""
+
+  - name: "中国語アサーション"
+    description: "中国語パターンのテスト"
+    steps:
+      - instruction: "验证\"Example Domain\"显示"
+      - instruction: "确认URL包含\"example.com\""
+      - instruction: "检查标题包含'Example'"
+      - instruction: "断言'存在しないテキスト'不存在"

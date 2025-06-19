@@ -1,0 +1,22 @@
+name: "パターンマッチングテスト"
+base_url: "https://example.com"
+
+test_cases:
+  - name: "正常なアサーション"
+    description: "パターンに一致する文言"
+    steps:
+      - instruction: "「Example Domain」が表示されていることを確認"
+
+  - name: "一致しないアサーション"
+    description: "パターンに一致しない文言"
+    steps:
+      - instruction: "何かよくわからないテキストの指示"
+      - instruction: "適当に画面を見る"
+      - instruction: "なんとなく確かめたい気持ち"
+
+  - name: "微妙なライン"
+    description: "キーワードは含むがパターンに一致しない"
+    steps:
+      - instruction: "確認したいけどどうしよう"
+      - instruction: "この画面をチェックする必要がある"
+      - instruction: "検証という言葉だけ含む文章"

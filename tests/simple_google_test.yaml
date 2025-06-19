@@ -1,0 +1,17 @@
+name: "Google検索シンプルテスト"
+base_url: "https://www.google.com"
+test_cases:
+  - name: "基本的なGoogle検索"
+    steps:
+      - instruction: "検索ボックスに「OpenAI」と入力する"
+      - instruction: "Enterキーを押すか検索ボタンをクリックする"
+      - instruction: "検索結果が表示されることを確認する"
+      - instruction: "最初の検索結果をクリックする"
+
+  - name: "画像検索テスト"
+    steps:
+      - instruction: "Googleのトップページに戻る"
+      - instruction: "検索ボックスに「桜」と入力する"  
+      - instruction: "検索ボタンをクリックする"
+      - instruction: "「画像」タブをクリックする"
+      - instruction: "画像検索結果が表示されることを確認する"

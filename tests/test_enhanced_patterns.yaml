@@ -1,0 +1,56 @@
+name: "拡張パターンテスト"
+base_url: "https://example.com"
+
+test_cases:
+  - name: "口語・疑問形パターン"
+    description: "自然な話し言葉のテスト"
+    steps:
+      - instruction: "Example Domainって表示されてる？"
+      - instruction: "Example Domainが見えてますか？"
+      - instruction: "Example Domainってちゃんと表示されてるかな"
+      - instruction: "Example Domainが出てるよね？"
+
+  - name: "ビジネス表現パターン"
+    description: "フォーマルな表現のテスト"
+    steps:
+      - instruction: "Example Domainの表示状況を確認してください"
+      - instruction: "Example Domainについて存在確認を実施します"
+      - instruction: "Example Domainの画面表示について検証"
+
+  - name: "条件付き・仮定表現"
+    description: "条件文のテスト"
+    steps:
+      - instruction: "もしExample Domainが表示されているなら確認"
+      - instruction: "Example Domainが正常に表示されていることを確認"
+
+  - name: "URL拡張パターン"
+    description: "自然なURL確認表現"
+    steps:
+      - instruction: "現在のURLにexample.comが含まれていることを確認"
+      - instruction: "ページのアドレスがhttpsで始まっていることをチェック"
+
+  - name: "タイトル拡張パターン"
+    description: "自然なタイトル確認表現"
+    steps:
+      - instruction: "ページのタイトルにExampleが含まれていることを確認"
+      - instruction: "サイトの見出しがExample Domainと一致することを検証"
+
+  - name: "非存在確認拡張"
+    description: "自然な非存在確認表現"
+    steps:
+      - instruction: "エラーメッセージが表示されていないことを確認"
+      - instruction: "警告文なんてテキストが出ていないはず"
+
+  - name: "英語拡張パターン"
+    description: "自然な英語表現"
+    steps:
+      - instruction: "make sure 'Example Domain' is visible"
+      - instruction: "I should see 'Example Domain' on the page"
+      - instruction: "the page should show 'Example Domain'"
+
+  - name: "中国語拡張パターン"
+    description: "自然な中国語表現"
+    steps:
+      - instruction: "检查\"Example Domain\"是否显示"
+      - instruction: "页面上应该显示\"Example Domain\""
+      - instruction: "确保\"Example Domain\"在屏幕中出现"

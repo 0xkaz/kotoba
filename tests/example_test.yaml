@@ -1,0 +1,27 @@
+# Tsumugu テストファイル例
+
+name: "基本的なWebテスト"
+base_url: "https://example.com"
+
+test_cases:
+  - name: "ページタイトル確認"
+    description: "Exampleサイトのタイトルを確認する"
+    steps:
+      - instruction: "ページのタイトルを確認する"
+      - instruction: "スクリーンショットを撮る"
+
+  - name: "リンクのクリックテスト"
+    description: "More informationリンクをクリックする"
+    steps:
+      - instruction: "More informationと書かれたリンクをクリックする"
+      - instruction: "3秒待つ"
+      - instruction: "スクリーンショットを撮る"
+
+  - name: "Google検索テスト"
+    description: "Googleで検索を行う"
+    steps:
+      - instruction: "https://www.google.com に移動する"
+      - instruction: "検索ボックスに「playwright テスト」と入力する"
+      - instruction: "検索ボタンをクリックする"
+      - instruction: "検索結果が表示されるまで待つ"
+      - instruction: "スクリーンショットを撮る"

@@ -1,0 +1,25 @@
+name: "Yahoo! Japan検索テスト"
+base_url: "https://www.yahoo.co.jp"
+test_cases:
+  - name: "基本検索テスト"
+    steps:
+      - instruction: "検索ボックスに「天気予報」と入力する"
+      - instruction: "検索ボタンをクリックする"
+      - instruction: "検索結果が表示されるまで待つ"
+      - instruction: "検索結果ページで「今日の天気」を含む見出しを探す"
+
+  - name: "ニュースタブテスト"
+    steps:
+      - instruction: "トップページに戻る"
+      - instruction: "ニュースタブまたはニュースリンクをクリックする"
+      - instruction: "ニュース一覧ページが表示されることを確認する"
+      - instruction: "最新ニュースの最初の記事をクリックする"
+      - instruction: "記事ページが開くことを確認する"
+
+  - name: "メニューナビゲーションテスト"
+    steps:
+      - instruction: "Yahoo! Japanのトップページに移動する"
+      - instruction: "ページ上部のメニューで「地図」を見つけてクリックする"
+      - instruction: "Yahoo!地図のページが開くことを確認する"
+      - instruction: "検索ボックスに「東京駅」と入力する"
+      - instruction: "地図検索を実行する"

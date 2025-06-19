@@ -1,0 +1,40 @@
+name: "アサーション機能テスト"
+base_url: "https://example.com"
+
+test_cases:
+  - name: "基本的なテキスト存在確認"
+    description: "ページに特定のテキストが表示されていることを確認"
+    steps:
+      - instruction: "「Example Domain」が表示されていることを確認"
+      - instruction: "「examples」が表示されていることを確認"
+
+  - name: "テキスト非存在確認"
+    description: "ページに存在しないテキストの確認"
+    steps:
+      - instruction: "「存在しないテキスト」が表示されていないことを確認"
+      - instruction: "「エラーメッセージ」が表示されていないことを確認"
+
+  - name: "URL確認"
+    description: "現在のURLの確認"
+    steps:
+      - instruction: "URLに「example.com」が含まれることを確認"
+      - instruction: "URLが「https://」で始まることを確認"
+
+  - name: "タイトル確認"
+    description: "ページタイトルの確認"
+    steps:
+      - instruction: "ページタイトルに「Example」が含まれることを確認"
+
+  - name: "URLとタイトル検証"
+    description: "URLとタイトルの組み合わせ検証"
+    steps:
+      - instruction: "URLが「example.com/」で終わることを確認"
+      - instruction: "ページタイトルに「Domain」が含まれることを確認"
+
+  - name: "複合テスト"
+    description: "複数のアサーションを組み合わせたテスト"
+    steps:
+      - instruction: "「Example Domain」が表示されていることを確認"
+      - instruction: "URLに「example.com」が含まれることを確認"
+      - instruction: "ページタイトルに「Example」が含まれることを確認"
+      - instruction: "「存在しないテキスト」が表示されていないことを確認"

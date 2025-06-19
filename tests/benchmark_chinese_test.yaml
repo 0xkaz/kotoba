@@ -1,0 +1,5 @@
+name: Chinese Simple Test
+steps:
+- 确认页面标题
+- 截图保存
+url: https://example.com

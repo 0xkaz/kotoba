@@ -1,0 +1,68 @@
+# The Internet (Herokuapp) テストスイート
+
+name: "The Internet UI要素テスト"
+base_url: "https://the-internet.herokuapp.com"
+
+test_cases:
+  - name: "トップページ確認"
+    description: "The Internetトップページを確認する"
+    steps:
+      - instruction: "ページのタイトルを確認する"
+      - instruction: "Welcome to the-internet と書かれた見出しを確認する"
+      - instruction: "スクリーンショットを撮る"
+
+  - name: "Add/Remove Elements テスト"
+    description: "動的要素の追加・削除をテストする"
+    steps:
+      - instruction: "Add/Remove Elements と書かれたリンクをクリックする"
+      - instruction: "Add Element と書かれたボタンをクリックする"
+      - instruction: "新しいボタンが追加されることを確認する"
+      - instruction: "Delete と書かれたボタンをクリックする"
+      - instruction: "スクリーンショットを撮る"
+
+  - name: "チェックボックステスト"
+    description: "チェックボックスの操作をテストする"
+    steps:
+      - instruction: "トップページに戻る"
+      - instruction: "Checkboxes と書かれたリンクをクリックする"
+      - instruction: "最初のチェックボックスをクリックする"
+      - instruction: "2番目のチェックボックスをクリックする"
+      - instruction: "スクリーンショットを撮る"
+
+  - name: "ドロップダウンテスト"
+    description: "ドロップダウンメニューの操作をテストする"
+    steps:
+      - instruction: "トップページに戻る"
+      - instruction: "Dropdown と書かれたリンクをクリックする"
+      - instruction: "ドロップダウンメニューをクリックする"
+      - instruction: "Option 1 を選択する"
+      - instruction: "スクリーンショットを撮る"
+
+  - name: "フォーム認証テスト"
+    description: "ログインフォームをテストする"
+    steps:
+      - instruction: "トップページに戻る"
+      - instruction: "Form Authentication と書かれたリンクをクリックする"
+      - instruction: "ユーザー名入力欄に tomsmith と入力する"
+      - instruction: "パスワード入力欄に SuperSecretPassword! と入力する"
+      - instruction: "Login ボタンをクリックする"
+      - instruction: "ログイン成功メッセージを確認する"
+      - instruction: "スクリーンショットを撮る"
+
+  - name: "ホバーテスト"
+    description: "マウスホバー動作をテストする"
+    steps:
+      - instruction: "トップページに戻る"
+      - instruction: "Hovers と書かれたリンクをクリックする"
+      - instruction: "最初の画像にマウスを合わせる"
+      - instruction: "ホバー時に表示される情報を確認する"
+      - instruction: "スクリーンショットを撮る"
+
+  - name: "JavaScript Alerts テスト"
+    description: "JavaScriptアラートをテストする"
+    steps:
+      - instruction: "トップページに戻る"
+      - instruction: "JavaScript Alerts と書かれたリンクをクリックする"
+      - instruction: "Click for JS Alert ボタンをクリックする"
+      - instruction: "3秒待つ"
+      - instruction: "スクリーンショットを撮る"

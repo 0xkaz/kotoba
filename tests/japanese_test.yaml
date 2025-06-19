@@ -1,0 +1,34 @@
+# 日本語サイトテスト例
+
+name: "日本語サイトテスト"
+base_url: "https://www.yahoo.co.jp"
+
+test_cases:
+  - name: "Yahoo Japan トップページテスト"
+    description: "Yahoo Japanのトップページ操作"
+    steps:
+      - instruction: "ページのタイトルを確認する"
+      - instruction: "検索ボックスを見つける"
+      - instruction: "検索ボックスに「天気予報」と入力する"
+      - instruction: "検索ボタンを押す"
+      - instruction: "検索結果を待つ"
+      - instruction: "スクリーンショットを撮る"
+
+  - name: "ニュースカテゴリテスト"
+    description: "ニュースカテゴリの確認"
+    steps:
+      - instruction: "トップページに戻る"
+      - instruction: "ニュースと書かれたリンクをクリックする"
+      - instruction: "ページが読み込まれるまで待つ"
+      - instruction: "主要ニュースの見出しを確認する"
+      - instruction: "スクリーンショットを撮る"
+
+  - name: "天気情報テスト"
+    description: "天気情報の確認"
+    steps:
+      - instruction: "トップページに戻る"
+      - instruction: "天気と書かれたリンクまたはボタンを探す"
+      - instruction: "天気情報をクリックする"
+      - instruction: "天気予報が表示されるまで待つ"
+      - instruction: "東京の天気を確認する"
+      - instruction: "スクリーンショットを撮る"

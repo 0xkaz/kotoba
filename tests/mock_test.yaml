@@ -1,0 +1,17 @@
+name: "MockLLMテスト"
+base_url: "https://the-internet.herokuapp.com"
+test_cases:
+  - name: "基本ナビゲーションテスト"
+    steps:
+      - instruction: "Add/Remove Elementsページに移動する"
+      - instruction: "Add Elementボタンをクリックする"
+      - instruction: "要素が追加されたことを確認する"
+      - instruction: "Deleteボタンをクリックする"
+
+  - name: "ログインテスト"
+    steps:
+      - instruction: "Form Authenticationページに移動する"
+      - instruction: "ユーザー名フィールドにtomsmithと入力する"
+      - instruction: "パスワードフィールドにSuperSecretPassword!と入力する"
+      - instruction: "Loginボタンをクリックする"
+      - instruction: "ログイン成功メッセージが表示されることを確認する"

@@ -1,0 +1,28 @@
+# Development environment override settings
+
+version: '3.8'
+
+services:
+  kotoba:
+    volumes:
+      # HuggingFace dedicated volume (more reliable caching)
+      - kotoba_hf_cache:/home/testuser/.cache/huggingface
+      # Persist pip cache
+      - kotoba_pip_cache:/home/testuser/.cache/pip
+      # PyTorch cache
+      - kotoba_torch_cache:/home/testuser/.cache/torch
+    environment:
+      # Offline mode (cache priority)
+      - HF_HUB_OFFLINE=0
+      - TRANSFORMERS_OFFLINE=0
+      # Cache directories
+      - HF_HOME=/home/testuser/.cache/huggingface
+      - TORCH_HOME=/home/testuser/.cache/torch
+
+volumes:
+  kotoba_hf_cache:
+    driver: local
+  kotoba_pip_cache:
+    driver: local
+  kotoba_torch_cache:
+    driver: local

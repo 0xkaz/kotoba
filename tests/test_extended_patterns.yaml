@@ -1,0 +1,91 @@
+name: "拡張パターンテスト（200個以上）"
+base_url: "https://example.com"
+
+test_cases:
+  - name: "フォーム要素パターン"
+    description: "ボタン、リンク、入力フィールドの確認"
+    steps:
+      - instruction: "送信ボタンが表示されていることを確認"
+      - instruction: "ホームへのリンクが正しく設定されていることを確認"
+      - instruction: "メールアドレス入力欄が空であることを確認"
+      
+  - name: "ステータス・状態パターン"
+    description: "ローディング、エラー、成功状態の確認"
+    steps:
+      - instruction: "ページが読み込み中でないことを確認"
+      - instruction: "エラーメッセージが出ていないことを確認"
+      - instruction: "成功メッセージが表示されていることを確認"
+      
+  - name: "画像・メディアパターン"
+    description: "画像、動画、アイコンの確認"
+    steps:
+      - instruction: "ロゴ画像が表示されていることを確認"
+      - instruction: "アイコンのホームが表示されていることを確認"
+      
+  - name: "テーブル・リストパターン"
+    description: "テーブル、リストの確認"
+    steps:
+      - instruction: "テーブルにExample Domainというデータが表示されていることを確認"
+      - instruction: "リストにExample Domainが含まれていることを確認"
+      
+  - name: "モーダル・ポップアップパターン"
+    description: "モーダル、アラート、通知の確認"
+    steps:
+      - instruction: "モーダルが閉じていることを確認"
+      - instruction: "アラートが表示されていないことを確認"
+      
+  - name: "ナビゲーションパターン"
+    description: "メニュー、タブ、ナビゲーションの確認"
+    steps:
+      - instruction: "ナビゲーションにHomeが含まれていることを確認"
+      
+  - name: "アクセシビリティパターン"
+    description: "ARIA、フォーカスの確認"
+    steps:
+      - instruction: "タブキーで正しくフォーカス移動できることを確認"
+      
+  - name: "日付・時刻パターン"
+    description: "日付、時刻の確認"
+    steps:
+      - instruction: "今日の日付が正しく表示されていることを確認"
+      
+  - name: "価格・金額パターン"
+    description: "価格、合計の確認"
+    steps:
+      - instruction: "合計が正しく計算されていることを確認"
+      
+  - name: "ログイン・認証パターン"
+    description: "ログイン状態、ユーザー情報の確認"
+    steps:
+      - instruction: "ログアウト状態であることを確認"
+      
+  - name: "ダウンロード・アップロードパターン"
+    description: "ダウンロード、アップロードの確認"
+    steps:
+      - instruction: "ダウンロードボタンが利用可能であることを確認"
+      
+  - name: "プログレス・進捗パターン"
+    description: "進捗、プログレスバーの確認"
+    steps:
+      - instruction: "プログレスバーが表示されていることを確認"
+      
+  - name: "バリデーション・検証パターン"
+    description: "バリデーション、エラーの確認"
+    steps:
+      - instruction: "バリデーションエラーが表示されていないことを確認"
+      
+  - name: "ソート・フィルターパターン"
+    description: "ソート、フィルターの確認"
+    steps:
+      - instruction: "項目が正しく並んでいることを確認"
+      - instruction: "フィルターが適用されていることを確認"
+      
+  - name: "ページネーションパターン"
+    description: "ページング、ナビゲーションの確認"
+    steps:
+      - instruction: "ページ1が表示されていることを確認"
+      
+  - name: "言語・国際化パターン"
+    description: "言語切替、ローカライズの確認"
+    steps:
+      - instruction: "日本語表示になっていることを確認"

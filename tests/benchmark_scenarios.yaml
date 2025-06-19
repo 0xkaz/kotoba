@@ -1,0 +1,45 @@
+# kotoba Benchmark Test Scenarios
+
+scenarios:
+  # 1. E-commerce Site Test
+  - name: "E-commerce Shopping Flow"
+    url: "https://demo-shop.example.com"
+    tasks:
+      - "Search for 'wireless headphones'"
+      - "Filter by price under $100"
+      - "Sort by customer ratings"
+      - "Click on the first product"
+      - "Add to cart"
+      - "Verify cart shows 1 item"
+    
+  # 2. Form Interaction Test  
+  - name: "Complex Form Filling"
+    url: "https://the-internet.herokuapp.com/login"
+    tasks:
+      - "Enter 'tomsmith' in username field"
+      - "Enter 'SuperSecretPassword!' in password field"
+      - "Click the login button"
+      - "Verify success message appears"
+      
+  # 3. Japanese Language Test
+  - name: "Japanese UI Navigation"
+    url: "https://www.yahoo.co.jp"
+    tasks:
+      - "検索ボックスに「天気予報」と入力する"
+      - "検索ボタンをクリックする"
+      - "東京の天気を探す"
+      - "明日の天気を確認する"
+      
+  # 4. Ambiguous Instructions Test
+  - name: "Natural Language Understanding"
+    tasks:
+      - "Go to Google and search for something interesting"
+      - "Find a news article about technology"
+      - "Check if there are any images"
+      - "Go back to the homepage"
+
+evaluation_criteria:
+  - accuracy: "Percentage of correctly executed steps"
+  - speed: "Average time per action"
+  - memory: "Peak memory usage during execution"
+  - reliability: "Success rate across multiple runs"

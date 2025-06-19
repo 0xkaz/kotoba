@@ -1,0 +1,93 @@
+# Multilingual Benchmark Test Scenarios
+
+scenarios:
+  # 1. 日本語シナリオ
+  japanese_tests:
+    - name: "Yahoo Japan 検索"
+      url: "https://www.yahoo.co.jp"
+      tasks:
+        - "検索ボックスに「東京の天気」と入力する"
+        - "検索ボタンをクリックする"
+        - "天気予報のリンクをクリックする"
+        - "明日の気温を確認する"
+        
+    - name: "楽天ショッピング"
+      url: "https://www.rakuten.co.jp"
+      tasks:
+        - "検索バーに「ワイヤレスイヤホン」と入力"
+        - "価格順で並び替える"
+        - "最初の商品をクリック"
+        - "カートに追加する"
+
+  # 2. 中国語シナリオ（簡体字）
+  chinese_simplified_tests:
+    - name: "百度搜索测试"
+      url: "https://www.baidu.com"
+      tasks:
+        - "在搜索框中输入「北京天气」"
+        - "点击搜索按钮"
+        - "查看今天的温度"
+        - "点击返回首页"
+        
+    - name: "淘宝购物流程"
+      url: "https://www.taobao.com"
+      tasks:
+        - "搜索「无线耳机」"
+        - "按销量排序"
+        - "选择第一个商品"
+        - "点击立即购买"
+
+  # 3. 中国語シナリオ（繁体字）
+  chinese_traditional_tests:
+    - name: "Google搜尋測試"
+      url: "https://www.google.com.tw"
+      tasks:
+        - "在搜尋框輸入「台北天氣」"
+        - "點擊搜尋按鈕"
+        - "查看天氣預報"
+        - "截圖保存結果"
+
+  # 4. 英語シナリオ
+  english_tests:
+    - name: "Amazon Shopping"
+      url: "https://www.amazon.com"
+      tasks:
+        - "Search for 'wireless headphones'"
+        - "Filter by Prime delivery"
+        - "Sort by customer reviews"
+        - "Add first item to cart"
+        
+    - name: "GitHub Navigation"
+      url: "https://github.com"
+      tasks:
+        - "Search for 'playwright' in repositories"
+        - "Open the first repository"
+        - "View the README file"
+        - "Check the star count"
+
+  # 5. 混合言語シナリオ
+  mixed_language_tests:
+    - name: "多言語理解テスト"
+      tasks:
+        - "Go to Google and search for '日本語テスト'"
+        - "Navigate to the first result"
+        - "Look for any English content"
+        - "Take a screenshot"
+
+evaluation_metrics:
+  accuracy_by_language:
+    japanese: []
+    chinese_simplified: []
+    chinese_traditional: []
+    english: []
+    mixed: []
+    
+  performance_by_model:
+    response_time: []
+    memory_usage: []
+    success_rate: []
+    
+  language_understanding:
+    character_recognition: []    # 文字認識精度
+    context_understanding: []   # 文脈理解
+    instruction_following: []   # 指示追従

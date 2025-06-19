@@ -1,0 +1,32 @@
+# Web automation
+playwright==1.40.0
+
+# LLM libraries (Optional - can be installed via extras_require)
+transformers>=4.36.0
+torch>=2.1.0; sys_platform != "darwin" or platform_machine != "arm64"
+torch>=2.1.0; sys_platform == "darwin" and platform_machine == "arm64"
+accelerate>=0.25.0
+huggingface_hub>=0.19.3
+
+# Configuration
+pyyaml==6.0.1
+pydantic==2.5.0
+
+# CLI
+click==8.1.7
+rich==13.7.0
+
+# Logging
+loguru==0.7.2
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+
+# Code quality
+ruff==0.1.7
+
+# Utilities
+aiofiles==23.2.1
+asyncio-throttle==1.0.2
+tqdm>=4.65.0

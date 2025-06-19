@@ -1,0 +1,54 @@
+# httpbin.org テストスイート
+
+name: "HTTPBin API テスト"
+base_url: "https://httpbin.org"
+
+test_cases:
+  - name: "トップページ確認"
+    description: "httpbin.orgのトップページを確認する"
+    steps:
+      - instruction: "ページのタイトルを確認する"
+      - instruction: "スクリーンショットを撮る"
+
+  - name: "GETリクエストテスト"
+    description: "GET /get エンドポイントをテストする"
+    steps:
+      - instruction: "/get と書かれたリンクをクリックする"
+      - instruction: "ページが読み込まれるまで待つ"
+      - instruction: "JSONレスポンスが表示されることを確認する"
+      - instruction: "スクリーンショットを撮る"
+
+  - name: "POSTフォームテスト"
+    description: "POST /post エンドポイントをテストする"
+    steps:
+      - instruction: "トップページに戻る"
+      - instruction: "/post と書かれたリンクをクリックする"
+      - instruction: "ページが読み込まれるまで待つ"
+      - instruction: "スクリーンショットを撮る"
+
+  - name: "HTTPステータスコードテスト"
+    description: "ステータスコードのテストページを確認"
+    steps:
+      - instruction: "トップページに戻る"
+      - instruction: "Status codes と書かれたセクションを探す"
+      - instruction: "200 と書かれたリンクをクリックする"
+      - instruction: "ページが読み込まれるまで待つ"
+      - instruction: "スクリーンショットを撮る"
+
+  - name: "JSONレスポンステスト"
+    description: "JSON形式のレスポンスを確認"
+    steps:
+      - instruction: "トップページに戻る"
+      - instruction: "/json と書かれたリンクをクリックする"
+      - instruction: "ページが読み込まれるまで待つ"
+      - instruction: "JSONデータが表示されることを確認する"
+      - instruction: "スクリーンショットを撮る"
+
+  - name: "ユーザーエージェント確認"
+    description: "ユーザーエージェント情報を確認"
+    steps:
+      - instruction: "トップページに戻る"
+      - instruction: "/user-agent と書かれたリンクをクリックする"
+      - instruction: "ページが読み込まれるまで待つ"
+      - instruction: "ブラウザ情報が表示されることを確認する"
+      - instruction: "スクリーンショットを撮る"

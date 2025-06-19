@@ -1,0 +1,26 @@
+# Test-specific Docker Compose configuration (lightweight version)
+
+version: '3.8'
+
+services:
+  kotoba-test:
+    build:
+      context: .
+      dockerfile: Dockerfile.light
+    volumes:
+      - ./src:/app/src
+      - ./tests:/app/tests
+      - ./configs:/app/configs
+      - ./outputs:/app/outputs
+    environment:
+      - PYTHONUNBUFFERED=1
+      - USE_MOCK_LLM=true
+      - PYTHONPATH=/app/src
+    working_dir: /app
+    command: tail -f /dev/null
+    networks:
+      - kotoba-test-network
+
+networks:
+  kotoba-test-network:
+    driver: bridge

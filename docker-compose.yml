@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  kotoba:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/app/src
+      - ./tests:/app/tests
+      - ./configs:/app/configs
+      - ./outputs:/app/outputs
+      - ~/.cache/huggingface:/home/testuser/.cache/huggingface
+    environment:
+      - PYTHONUNBUFFERED=1
+      - HF_HOME=/home/testuser/.cache/huggingface
+    working_dir: /app
+    command: tail -f /dev/null  # Keep container running for development
+    networks:
+      - kotoba-network
+
+networks:
+  kotoba-network:
+    driver: bridge

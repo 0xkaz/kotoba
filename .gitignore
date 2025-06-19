@@ -87,3 +87,6 @@ NOTE.md
 RESEARCH_*.md
 ANALYSIS_*.md
 INTERNAL_*.md
+
+# Private directory for articles and assets
+private/

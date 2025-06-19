@@ -1,0 +1,21 @@
+name: "基本的なナビゲーションテスト"
+description: "ブラウザの基本的な動作を確認するテスト"
+base_url: "https://example.com"
+
+test_cases:
+  - name: "ページタイトル確認"
+    steps:
+      - instruction: "ページを3秒待つ"
+        description: "ページ読み込み待機"
+
+  - name: "スクリーンショット撮影"
+    steps:
+      - instruction: "スクリーンショットを撮る"
+        description: "現在のページをキャプチャ"
+
+  - name: "ページ移動テスト"
+    steps:
+      - instruction: "https://example.org に移動する"
+        description: "別のサイトへ移動"
+      - instruction: "ページを2秒待つ"
+        description: "読み込み待機"

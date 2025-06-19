@@ -1,0 +1,19 @@
+include README.md
+include README.ja.md
+include LICENSE
+include CHANGELOG.md
+include requirements.txt
+include pyproject.toml
+
+recursive-include src/kotoba/configs *.yaml
+recursive-include tests *.yaml *.yml
+recursive-exclude tests __pycache__
+recursive-exclude * *.pyc
+recursive-exclude * *.pyo
+recursive-exclude * *.swp
+recursive-exclude * .DS_Store
+
+prune outputs
+prune .github
+prune docs
+prune __pycache__

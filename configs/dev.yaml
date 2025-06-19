@@ -1,0 +1,24 @@
+# kotoba development environment configuration file
+
+llm:
+  model_name: "microsoft/phi-2"  # Lightweight model for development
+  device: "cpu"  # Use CPU in development environment
+  max_length: 256
+  temperature: 0.5
+  top_p: 0.8
+
+playwright:
+  browser: "chromium"
+  headless: false  # Show browser during development
+  timeout: 60000   # Longer timeout during development
+  viewport:
+    width: 1920
+    height: 1080
+
+test:
+  base_url: "http://localhost:3000"
+  screenshot_on_failure: true
+  output_dir: "outputs/dev"
+  retry_count: 1  # Fewer retries during development
+
+log_level: "DEBUG"

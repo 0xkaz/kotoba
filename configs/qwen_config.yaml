@@ -1,0 +1,29 @@
+# kotoba Configuration for Qwen2 (Chinese + Japanese support)
+
+llm:
+  model_name: "Qwen/Qwen2-1.5B-Instruct"
+  device: "auto"  # auto, cpu, cuda
+  
+playwright:
+  browser: "chromium"  # chromium, firefox, webkit
+  headless: true
+  timeout: 30000
+  viewport:
+    width: 1280
+    height: 720
+  
+test:
+  screenshot_on_failure: true
+  output_dir: "outputs"
+  retry_count: 3
+  
+# Language-specific settings for Chinese support
+language:
+  primary: ["zh", "ja", "en"]
+  encoding: "utf-8"
+  
+# Model-specific optimizations
+model_settings:
+  max_tokens: 512
+  temperature: 0.1
+  batch_size: 1
